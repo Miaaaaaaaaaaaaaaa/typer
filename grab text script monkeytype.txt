@@ -1,0 +1,10 @@
+var parentElement = document.getElementById("words");
+
+var wordElements = parentElement.getElementsByClassName("word");
+let allwords = "";
+
+for (var i = 0; i < wordElements.length; i++) {
+    var currentElement = wordElements[i].textContent;
+    allwords += currentElement + " ";
+    
+}

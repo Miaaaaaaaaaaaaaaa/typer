@@ -1,0 +1,11 @@
+// Get the element containing words
+var wordsElement = document.getElementById('row1');
+
+// Extract words from the span elements inside the container
+var words = Array.from(wordsElement.getElementsByTagName('span')).map(span => span.textContent.trim());
+
+// Join the words into a single space-separated string
+var result = words.join(' ');
+
+// Print the formatted string
+console.log(result);
